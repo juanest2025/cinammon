@@ -5,4 +5,7 @@
   - para rofi web con alt+m
   - para rofi sites con alt+shfit+i
   - para rofi launcher con alt+space
+  - para brave browser con alt+ñ
+  - para chrome browser con alt+ñ
+  - para fzf con super+i
 3. copia la carpeta rofi en el ~/.config 
