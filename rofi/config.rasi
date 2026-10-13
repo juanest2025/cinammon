@@ -1,0 +1,101 @@
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;
+    icon-theme: "Papirus-Dark";
+    terminal: "kitty";
+    drun-display-format: "{icon}  {name}";
+    font: "JetBrainsMono Nerd Font Medium 12";
+
+    sidebar-mode: false;
+    hide-scrollbar: true;
+    disable-history: false;
+    case-sensitive: false;
+}
+
+@theme "/dev/null"
+
+* {
+    bg:         #11111b;
+    bg-alt:     #181825;
+    border:     #313244;
+    fg:         #cdd6f4;
+    fg-alt:     #7f849c;
+    accent:     #89b4fa;
+
+    width:      650px;
+}
+
+window {
+    transparency: "real";
+    background-color: @bg;
+    border: 2px;
+    border-color: @border;
+    border-radius: 14px;
+}
+
+mainbox {
+    background-color: @bg;
+    spacing: 12px;
+    padding: 16px;
+}
+
+inputbar {
+    children: [entry];
+    background-color: @bg-alt;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+entry {
+    background-color: transparent;
+    text-color: @fg;
+    placeholder: "Search...";
+    placeholder-color: @fg-alt;
+    cursor: text;
+}
+
+listview {
+    columns: 1;
+    lines: 9;
+    spacing: 2px;
+    background-color: transparent;
+    scrollbar: false;
+}
+
+element {
+    orientation: horizontal;
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 8px;
+    spacing: 12px;
+    text-color: @fg;
+}
+
+element-icon {
+    background-color: transparent;
+    size: 24px;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    vertical-align: 0.5;
+}
+
+element selected {
+    background-color: @bg-alt;
+    text-color: @accent;
+}
+
+mode-switcher {
+    enabled: false;
+}
+
+message {
+    enabled: false;
+}
+
+textbox {
+    background-color: transparent;
+    text-color: @fg;
+}

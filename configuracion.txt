@@ -1,0 +1,8 @@
+1. instala rofi:
+  sudo dnf install rofi -y 
+2. ve a los atajos en cinammon y agrega:
+  - para cerrar las ventanas con el alt+shift+e
+  - para rofi web con alt+m
+  - para rofi sites con alt+shfit+i
+  - para rofi launcher con alt+space
+3. copia la carpeta rofi en el ~/.config 
