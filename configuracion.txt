@@ -9,3 +9,4 @@
   - para chrome browser con alt+ñ
   - para fzf con super+i
 3. copia la carpeta rofi en el ~/.config 
+4. restaura los atajos desde la carpata de atajos en esta repo

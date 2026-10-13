@@ -1,0 +1,4 @@
+Para exportar los atajos:
+  dconf dump /org/cinnamon/desktop/keybindings/ > atajos-cinnamon.conf
+Para importar los atajos:
+  dconf load /org/cinnamon/desktop/keybindings/ < atajos-cinnamon.conf
