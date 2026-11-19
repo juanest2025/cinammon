@@ -1,0 +1,4 @@
+1. Hacer backup de la apariencia de Cinnamon:
+dconf dump /org/cinnamon/ > cinnamon-backup.dconf
+2. Restaurar la apariencia:
+dconf load /org/cinnamon/ < cinnamon-backup.dconf

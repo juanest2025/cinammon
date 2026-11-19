@@ -1,0 +1,148 @@
+[/]
+enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:right:11:show-desktop@cinnamon.org:1', 'panel1:left:2:grouped-window-list@cinnamon.org:2', 'panel1:right:2:keyboard@cinnamon.org:3', 'panel1:right:0:systray@cinnamon.org:4', 'panel1:right:1:xapp-status@cinnamon.org:5', 'panel1:right:3:notifications@cinnamon.org:6', 'panel1:right:4:printers@cinnamon.org:7', 'panel1:right:5:removable-drives@cinnamon.org:8', 'panel1:right:6:network@cinnamon.org:9', 'panel1:right:7:nightlight@cinnamon.org:10', 'panel1:right:8:power@cinnamon.org:11', 'panel1:right:9:calendar@cinnamon.org:12', 'panel1:right:10:sound@cinnamon.org:13']
+enabled-desklets=@as []
+hotcorner-layout=['expo:false:0', 'scale:false:0', 'scale:false:0', 'desktop:false:0']
+next-applet-id=14
+panel-edit-mode=false
+panel-zone-icon-sizes='[{"panelId":1,"left":0,"center":0,"right":24}]'
+panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 28, "center": 28, "right": 16}]'
+panel-zone-text-sizes='[{"panelId":1,"left":0,"center":0,"right":0}]'
+panels-autohide=['1:false', '2:false']
+panels-enabled=['1:0:bottom']
+panels-height=['1:32', '2:32']
+panels-hide-delay=['1:0', '2:0']
+panels-show-delay=['1:0', '2:0']
+
+[desktop/a11y/applications]
+screen-reader-enabled=false
+
+[desktop/a11y/keyboard]
+bouncekeys-delay=300
+mousekeys-accel-time=300
+mousekeys-init-delay=300
+mousekeys-max-speed=10
+slowkeys-delay=300
+
+[desktop/a11y/mouse]
+dwell-click-enabled=false
+dwell-threshold=10
+dwell-time=1.2
+secondary-click-enabled=false
+secondary-click-time=1.2
+
+[desktop/background]
+picture-uri='file:///home/juanes/wallpaper/one.jpg'
+
+[desktop/background/slideshow]
+delay=15
+image-source='directory:///home/juanes/wallpaper'
+
+[desktop/input-sources]
+sources=[('xkb', 'latam')]
+
+[desktop/interface]
+cursor-blink-time=1200
+cursor-theme='Paper'
+gtk-theme='Mint-Y-Dark-Aqua'
+icon-theme='Mint-Y-Aqua'
+toolkit-accessibility=false
+
+[desktop/keybindings]
+custom-list=['custom0', 'custom1', 'custom2', 'custom3', 'custom4', 'custom5', 'custom6', 'custom7', 'custom8', 'custom9', 'custom10']
+
+[desktop/keybindings/custom-keybindings/custom0]
+binding=['<Shift><Alt>i']
+command='/home/juanes/.config/rofi/sitios/sites.sh'
+name='rofi sites'
+
+[desktop/keybindings/custom-keybindings/custom1]
+binding=['<Alt>m']
+command='/home/juanes/.config/rofi/sitios/webs.sh'
+name='rofi webs'
+
+[desktop/keybindings/custom-keybindings/custom10]
+binding=['<Primary><Shift>e']
+command='wlogout'
+name='wlogout'
+
+[desktop/keybindings/custom-keybindings/custom2]
+binding=['<Alt>space']
+command='/home/juanes/.config/rofi/launcher.sh'
+name='rofi launcher'
+
+[desktop/keybindings/custom-keybindings/custom3]
+binding=['<Super>Return']
+command='kitty'
+name='kitty'
+
+[desktop/keybindings/custom-keybindings/custom4]
+binding=['<Alt>ntilde']
+command='brave-browser'
+name='brave browser'
+
+[desktop/keybindings/custom-keybindings/custom5]
+binding=['<Primary><Shift>l']
+command='google-chrome'
+name='google chrome'
+
+[desktop/keybindings/custom-keybindings/custom6]
+binding=['<Super>i']
+command="kitty -e sh -c 'file=$(fzf --preview=\"bat --theme=gruvbox-dark --color=always {}\"); [ -n \"$file\" ] && nvim \"$file\"'"
+name='fzf'
+
+[desktop/keybindings/custom-keybindings/custom7]
+binding=['<Super>w']
+command='brave-browser --app=https://web.whatsapp.com\n'
+name='whatsapp'
+
+[desktop/keybindings/custom-keybindings/custom8]
+binding=['<Super>t']
+command='flatpak run org.telegram.desktop\n'
+name='telegram'
+
+[desktop/keybindings/custom-keybindings/custom9]
+binding=['<Primary><Shift>p']
+command='/home/juanes/.config/rofi/sitios/edit.sh'
+name='editar rofi scripts'
+
+[desktop/keybindings/wm]
+activate-window-menu=@as []
+close=['<Alt>F4', '<Shift><Alt>e', '<Super>q']
+toggle-fullscreen=['<Super>f']
+
+[desktop/notifications]
+notification-duration=4
+
+[desktop/peripherals/keyboard]
+delay=uint32 500
+repeat-interval=uint32 30
+
+[desktop/screensaver]
+layout-group=0
+
+[desktop/sound]
+event-sounds=false
+
+[gestures]
+swipe-down-2='PUSH_TILE_DOWN::end'
+swipe-down-3='TOGGLE_OVERVIEW::end'
+swipe-down-4='VOLUME_DOWN::end'
+swipe-left-2='PUSH_TILE_LEFT::end'
+swipe-left-3='WORKSPACE_NEXT::end'
+swipe-left-4='WINDOW_WORKSPACE_PREVIOUS::end'
+swipe-right-2='PUSH_TILE_RIGHT::end'
+swipe-right-3='WORKSPACE_PREVIOUS::end'
+swipe-right-4='WINDOW_WORKSPACE_NEXT::end'
+swipe-up-2='PUSH_TILE_UP::end'
+swipe-up-3='TOGGLE_EXPO::end'
+swipe-up-4='VOLUME_UP::end'
+tap-3='MEDIA_PLAY_PAUSE::end'
+
+[settings-daemon/plugins/color]
+night-light-enabled=true
+night-light-last-coordinates=(4.5999999999999996, -74.083332999999996)
+night-light-schedule-mode='always'
+night-light-temperature=uint32 3300
+
+[theme]
+name='Mint-Y-Dark-Aqua'
